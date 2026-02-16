@@ -13,6 +13,8 @@ public class Listing_page_test_case extends setupdriver{
         driver.findElement(Listing_Page_Xpath.close_ads).click();
 
         driver.findElement(Listing_Page_Xpath.Search_hotel).sendKeys("Spree Hotel Jaipur");
+
+        Thread.sleep(2000);
         driver.findElement(Listing_Page_Xpath.Select_hotel).click();
 
         driver.findElement(Listing_Page_Xpath.click_popularity).click();
@@ -27,6 +29,9 @@ public class Listing_page_test_case extends setupdriver{
 
         driver.findElement(Listing_Page_Xpath.View_Rooms).click();
         Thread.sleep(3000);
+
+        DetailPage_URL = driver.getCurrentUrl();
+        System.out.println(" This is The DetailPage URL:-    "+DetailPage_URL);
 
 
     }

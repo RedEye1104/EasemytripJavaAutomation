@@ -12,6 +12,7 @@ import java.time.Duration;
 public class setupdriver {
     protected static WebDriver driver;
     protected static String ListingURL;
+    protected static String DetailPage_URL;
 
 
     @BeforeMethod
