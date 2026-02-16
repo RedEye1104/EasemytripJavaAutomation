@@ -15,30 +15,6 @@
             <class name="TestCases.Listing_page_test_case"/>
         </classes>
     </test>
-    
-<!--    <test name="Listing_Page">-->
-<!--        <classes>-->
-<!--            <class name="TestCases.Listing_page_test_case"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name="Detail_page">-->
-<!--        <classes>-->
-<!--            <class name="TestCases.Detail_Page_test_case"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name="Traveler_Page">-->
-<!--        <classes>-->
-<!--            <class name="TestCases.Traveler_page_Test_cases"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name="Payment_Page">-->
-<!--        <classes>-->
-<!--            <class name="TestCases.Payment_Page_Test_Cases"/>-->
-<!--        </classes>-->
-<!--    </test>-->
 
 
 </suite>
