@@ -3,16 +3,14 @@
 <suite name="MyTestSuite">
 
 
-<!--    <test name="LoginTest">-->
-<!--        <classes>-->
-<!--            <class name="TestCases.Logintest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+
 
     <test name="HomePage">
         <classes>
-            <class name="TestCases.Home_page_test_cases"/>
-            <class name="TestCases.Listing_page_test_case"/>
+            <class name="TestCases.Logintest"/>
+<!--            <class name="TestCases.Home_page_test_cases"/>-->
+<!--            <class name="TestCases.Listing_page_test_case"/>-->
+<!--            <class name="TestCases.Detail_Page_test_case"/>-->
         </classes>
     </test>
 
