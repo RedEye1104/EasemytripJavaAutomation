@@ -2,7 +2,7 @@ package TestCases;
 import base_station.setupdriver;
 import org.testng.annotations.Test;
 import Pages_xpath.Listing_Page_Xpath;
-import TestCases.Home_page_test_cases;
+
 
 public class Listing_page_test_case extends setupdriver{
 
@@ -28,10 +28,10 @@ public class Listing_page_test_case extends setupdriver{
         driver.findElement(Listing_Page_Xpath.Hotel_price).getText();
 
         driver.findElement(Listing_Page_Xpath.View_Rooms).click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
 
         DetailPage_URL = driver.getCurrentUrl();
-        System.out.println(" This is The DetailPage URL:-    "+DetailPage_URL);
+        System.out.println(" This is The DetailPage URL:-    " + DetailPage_URL);
 
 
     }
