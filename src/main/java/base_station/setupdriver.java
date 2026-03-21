@@ -21,10 +21,10 @@ public class setupdriver {
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get("https://www.easemytrip.com/hotels/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
     }
 
