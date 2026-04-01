@@ -12,10 +12,13 @@ public class Detail_Page_test_case extends setupdriver {
 
     @Test(dependsOnMethods = "Listing_page")
     public void Detail_page() throws InterruptedException {
+
+    //----------------------------------------------Listing Page Section------------------------------------------------
         driver.get(ListingURL);
         Thread.sleep(2000);
 
-        driver.findElement(Listing_Page_Xpath.Search_hotel).sendKeys("Spree Hotel Jaipur");
+        driver.findElement(Listing_Page_Xpath.Search_hotel).sendKeys("Hotel");
+        Thread.sleep(3000);
         driver.findElement(Listing_Page_Xpath.Select_hotel).click();
         driver.findElement(Listing_Page_Xpath.View_Rooms).click();
 
@@ -23,7 +26,7 @@ public class Detail_Page_test_case extends setupdriver {
 
 
 
-
+    //-------------------------------------Switch Window Section--------------------------------------------------------
         String parentWindow = driver.getWindowHandle();
 
         for (String windowHandle : driver.getWindowHandles()) {
@@ -34,6 +37,8 @@ public class Detail_Page_test_case extends setupdriver {
         }
 
 
+    //------------------------------------------Detail page Section.----------------------------------------------------
+        driver.findElement(Detail_Page_Xpath.Hotel_Ad).click();
 
         String Hotel_summary = driver.findElement(Detail_Page_Xpath.hotel_summary).getText();
         System.out.println("Hotel Summary: " + Hotel_summary);
@@ -63,6 +68,8 @@ public class Detail_Page_test_case extends setupdriver {
         driver.findElement(Detail_Page_Xpath.ViewMore_Options).click();
 
         driver.findElement(Detail_Page_Xpath.Back_In_Rooms).click();
+
+        Thread.sleep(3000);
 
         driver.findElement(Detail_Page_Xpath.Book_Now).click();
 
