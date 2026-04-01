@@ -24,7 +24,7 @@ public class setupdriver {
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get("https://www.easemytrip.com/hotels/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 
     }
 
