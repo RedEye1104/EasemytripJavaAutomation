@@ -8,11 +8,9 @@ public class Listing_page_test_case extends setupdriver{
 
     @Test(dependsOnMethods = "Test_Home_page")
     public void Listing_page() throws InterruptedException{
-        driver.get(ListingURL);           //Spree Hotel Jaipur
+        driver.get(ListingURL);
 
-        driver.findElement(Listing_Page_Xpath.close_ads).click();
-
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         driver.findElement(Listing_Page_Xpath.click_popularity).click();
 
@@ -24,9 +22,11 @@ public class Listing_page_test_case extends setupdriver{
 
         driver.findElement(Listing_Page_Xpath.Reset_all_Filter).click();
 
-        driver.findElement(Listing_Page_Xpath.Search_hotel).sendKeys("Spree Hotel Jaipur");
+        driver.findElement(Listing_Page_Xpath.Search_hotel).sendKeys("Hotel");
 
-        driver.findElement(Listing_Page_Xpath.Search_hotel).click();
+        Thread.sleep(2000);
+
+        driver.findElement(Listing_Page_Xpath.Select_hotel).click();
 
        String Hotel_Name =  driver.findElement(Listing_Page_Xpath.Hotel_name).getText();
        System.out.println("Selected Hotel Name is :-  "+Hotel_Name);

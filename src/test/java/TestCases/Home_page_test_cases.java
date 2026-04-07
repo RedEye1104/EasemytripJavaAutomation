@@ -12,7 +12,7 @@ public class Home_page_test_cases extends setupdriver
     {
         driver.findElement(Home_page_Xpath.Click_Location).click();
 
-        driver.findElement(Home_page_Xpath.searchLocation).sendKeys("jaipur");
+        driver.findElement(Home_page_Xpath.searchLocation).sendKeys("Jaipur");
 
         Thread.sleep(2000);
         driver.findElement(Home_page_Xpath.select_location).click();
