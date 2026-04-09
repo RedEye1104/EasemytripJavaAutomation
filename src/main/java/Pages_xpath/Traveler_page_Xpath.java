@@ -5,7 +5,7 @@ public class Traveler_page_Xpath {
 
 //----------------------------------------------------Hotel Detail Section----------------------------------------------
 
-    public static By Dismiss_ad =By.xpath("/html/body/app-root/div/app-hotel-traveller/div[3]/div/div[4]/a[2]");
+    public static By Dismiss_ad =By.xpath("/html/body/app-root/div/app-hotel-traveller/div[3]/div/div[1]");
 
     public static By Check_IN_Out_Detail = By.xpath("//*[@id=\"divHotelDetails\"]/form/div/div[1]/div/div/div[1]/review-hotel-itinerary-desktop/div/div[4]/div[1]");
 
